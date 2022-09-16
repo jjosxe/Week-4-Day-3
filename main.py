@@ -13,76 +13,78 @@
 ###############################################Review############################################################
 #####################################challenge 1################################################################
 # Create a list with 5 elements, inside the variable my_list. You can include strings, booleans, numbers, etc.
-my_list = ["phone", "computer", "console", "headphones", "electricity"]
+# my_list = ["phone", "computer", "console", "headphones", "electricity"]
 
-# # Add the element "motorcycle" to the following list of means of transportation:
+# # # Add the element "motorcycle" to the following list of means of transportation:
 
-transportation_means = ["plane", "car", "ship", "bicycle"]
-transportation_means.append("motorcycle")
-#append adds an element to the list 
-transportation_means.remove("car")
-#remove removes an item from the list
-newTrans = transportation_means.pop()
-#pop removes the last element 
-# print("My new trans is " +newTrans)
-transportation_means.insert(1,"tesla")
-transportation_means.insert(2,"cadillac")
+# transportation_means = ["plane", "car", "ship", "bicycle"]
+# transportation_means.append("motorcycle")
+# #append adds an element to the list 
+# transportation_means.remove("car")
+# #remove removes an item from the list
+# newTrans = transportation_means.pop()
+# #pop removes the last element 
+# # print("My new trans is " +newTrans)
+# transportation_means.insert(1,"tesla")
+# transportation_means.insert(2,"cadillac")
 
-# # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
+# # # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
 
-# # here are two lists:
-luckyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15]
-friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
-# instructions:
-######join both lists together in a new list
-luckyNumbers.extend(friends)
-###### print the new list out
-print(luckyNumbers)
-###### print out the first item in the list
-print(luckyNumbers[0])
-###### remove the last item of the new list
-luckyNumbers.remove("lord tennyson")
-###### print the new list out without the last item
-print(luckyNumbers)
-###### add three more items to the end of the list
-luckyNumbers.append("jose")
-luckyNumbers.append("rebeca")
-luckyNumbers.append("katherine")
-###### print the last item in the new list
-print(luckyNumbers[21])
-###### sort the list
-friends.sort()
-print(friends)
-###### find a way to insert a new item at the 3rd position of the list
-luckyNumbers.insert(2, "glitch")
-###### print the new list out
-print(luckyNumbers)
-##### reverse the list
-luckyNumbers.reverse()
-###### print the new list out
-print(luckyNumbers)
-###### print out the length of the new list
-print(len(luckyNumbers))
+# # # here are two lists:
+# luckyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15]
+# friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
+# # instructions:
+# ######join both lists together in a new list
+# luckyNumbers.extend(friends)
+# ###### print the new list out
+# print(luckyNumbers)
+# ###### print out the first item in the list
+# print(luckyNumbers[0])
+# ###### remove the last item of the new list
+# luckyNumbers.remove("lord tennyson")
+# ###### print the new list out without the last item
+# print(luckyNumbers)
+# ###### add three more items to the end of the list
+# luckyNumbers.append("jose")
+# luckyNumbers.append("rebeca")
+# luckyNumbers.append("katherine")
+# ###### print the last item in the new list
+# print(luckyNumbers[21])
+# ###### sort the list
+# friends.sort()
+# print(friends)
+# ###### find a way to insert a new item at the 3rd position of the list
+# luckyNumbers.insert(2, "glitch")
+# ###### print the new list out
+# print(luckyNumbers)
+# ##### reverse the list
+# luckyNumbers.reverse()
+# ###### print the new list out
+# print(luckyNumbers)
+# ###### print out the length of the new list
+# print(len(luckyNumbers))
 #####################################challenge 2#######################################################
 # Join the following list into a string, separating each item with a space. Use the appropriate list/string method, and display the result.
 word_list = ["Simple", "is", "better", "than", "complex."]
-
+print(' '.join(word_list))
 # Print the following text in uppercase, using the specific string method:
 
 text1 = "Especially in electronic communications, writing in all caps is equivalent to yelling."
-
+print(text1.upper())
 #substrings
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
 
 text2 = "Never trust a computer you can't throw out a window"
-
+print(text2[8::3])
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
 
 text3 = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-
+print(text3[::-1])
 # Extract the first word of the following sentence using slicing, and display it on the screen:
-"Controlling complexity is the essence of programming"
-
+ex = "Controlling complexity is the essence of programming"
+all_words = ex.split()
+print(all_words)
+print(all_words[0])
 # create a text input that asks for choice of food
 #create an empty list variable called food
 # add 3 items from the user into the empty list
