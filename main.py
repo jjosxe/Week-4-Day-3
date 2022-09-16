@@ -86,10 +86,16 @@ all_words = ex.split()
 print(all_words)
 print(all_words[0])
 # create a text input that asks for choice of food
-#create an empty list variable called food
-# add 3 items from the user into the empty list
-#print out the menu list
+foodChoice = input("What do you want to eat? ")
 
+#create an empty list variable called food
+food = []
+# add 3 items from the user into the empty list
+food.append(foodChoice)
+food.append(foodChoice)
+food.append(foodChoice)
+#print out the menu list
+print(food)
 ##############################################################################################################
 # what are tuples?
 # exactly the same thing as an array only it is immutable, once you define the tuple, you cannot change it or modify it
